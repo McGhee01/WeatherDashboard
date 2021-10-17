@@ -1,3 +1,35 @@
 body{
-    background-color: whitesmoke;
+    background-color: purple;
+}
+
+.col-sm-4 {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+}
+
+.jumbotron {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+.col-sm-2 {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+main{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+p {
+    color: yellow;
+}
+
+h3 {
+    color: black;
 }

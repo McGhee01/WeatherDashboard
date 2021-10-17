@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
   <!-- Font Awesome CSS Icons (For cool glyphicons) -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="scss/_variables.scss">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,16 +28,16 @@
         <div class="input-group mb-3">
           <input type="text" class="form-control"id="search-city" aria-label="City Search" aria-describedby="search-button">
           <div class="input-group-append">
-            <button class=" btn bg-primary text-light" id="search-button"><i class="fa fa-search"></i></button>
+            <button class=" btn bg-warning text-light" id="search-button"><i class="fa fa-search"></i></button>
           </div>
         </div>
         <!--section for search city history-->
-        <button class=" btn btn-primary" type="button" id="clear-history">Clear history</button>
+        <button class=" btn btn-danger" type="button" id="clear-history">Clear history</button>
         <ul class="list-group">
         </ul>
       </div> 
       <div class="col-sm-8">
-        <div class="row ml-2 border border-dark rounded">
+        <figure class="row ml-2 border border-dark rounded">
           <div class="col-sm-12" id="current-weather">
             <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
             <p>Temperature:<span class="current" id="temperature"></span></p>
@@ -44,9 +45,9 @@
             <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
             <p>UV index:<span class="current bg-danger rounded py-2 px-2 text-white" id="uv-index"></span></p>
           </div>
-        </div>
+        </figure>
         <!--Row for future data to be dumped here-->
-        <div class="col-sm-12" id ="future-weather">
+        <main class="col-sm-12" id ="future-weather">
           <h3>5-Day Forecast:</h3>
           <div class="row text-light">
             <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded" >
@@ -80,7 +81,7 @@
               <p>Humidity:<span id="fHumidity4"></span></p>
             </div>
           </div>
-        </div>
+        </main>
       </div>
     </div>
   </div>
